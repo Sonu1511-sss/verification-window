@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification car Window</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        width:100%;
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        margin-left: 37rem;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .image {
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+       
+    }
+    .selected {
+        border: 5px solid rgb(210, 46, 9);
+    }
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    p {
+        text-align: center;
+    }
+    #result {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .box{
+        display: flex;
+    }
+</style>
+</head>
+<body class="bg-pink-300">
+<h1 class="text-[1.2rem] font-bold mt-[4rem]">Verification Window</h1>
+<p class="text-[1rem] font-semibold">Select 3 images of cars from the following images:</p>
+<div class="container  gap-2  " id="imageContainer">
+    <div class="box gap-2 ">
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ92ZT_uM2E6d9tH93kBzChxNu5wbExyQpTuA&usqp=CAU" alt="bike 1">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://wallpapersmug.com/download/1024x768/9d4ce2/car-art-sportscar.jpg" alt="car 2">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXlSJMpj21yDspZ9BpOnYeBp5INOSMD9Xi3w&usqp=CAU" alt="bike 3">
+    </div>
+</div>
+<div class="box gap-2 ">
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7jachu4p97Xyb8c4cqpjRbOC1yrxli-yuVw&usqp=CAU" alt="car 1">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrEHVY69GT6-tVIMf0u8THMSw0GpBI4U6yQ&usqp=CAU" alt="car 3">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWtI4hrAEyeThzUVuiSzV0ofUSGQklyzRP8w&usqp=CAU" alt="bike 2">
+    </div>
+</div>
+</div>
+<div id="result">  </div>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>

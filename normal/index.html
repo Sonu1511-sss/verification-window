@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verification Window</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        width:100%;
+        margin: 50px auto;
+        text-align: center;
+        display: flex;
+        margin-left: 37rem;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .image {
+        display: inline-block;
+        margin: 10px;
+        cursor: pointer;
+       
+    }
+    .selected {
+        border: 5px solid rgb(210, 46, 9);
+    }
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    p {
+        text-align: center;
+    }
+    #result {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .box{
+        display: flex;
+    }
+</style>
+</head>
+<body class="bg-pink-300">
+<h1 class="text-[1.2rem] font-bold mt-[4rem]">Verification Window</h1>
+<p class="text-[1rem] font-semibold">Select 3 images of integer from the following images:</p>
+<div class="container  gap-2  " id="imageContainer">
+    <div class="box gap-2 ">
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7A6AxrR4SLXhYb3o6JmpU-2YpdTvo2Y17XtQxZjrh32VuGDX64m4a_xdwPM3kOtDc1VM&usqp=CAU" alt="Alfabat 1">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtjSudKnllKJ4hHlWJsq5Y5qyRz0HTqkucB_01cdTSEEZVYpi4QSTRFUfr-E6K4Bn50E&usqp=CAU" alt="integer 2">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://w0.peakpx.com/wallpaper/702/111/HD-wallpaper-s-name-alphabet-logo.jpg" alt="Alfabat 3">
+    </div>
+</div>
+<div class="box gap-2 ">
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgQPYwMRzBEPISPAlv_OaaDVvMWcMpQF5stdj1Zzdq5oid1Gj-T5VSA3Awp2nIprrA3C0&usqp=CAU" alt="integer 1">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz4MlqK-qF-Q09W3jW-plbFGkGqPktbJJ-MQ&usqp=CAU" alt="integer 3">
+    </div>
+    <div class="image" onclick="selectImage(this)">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJ8AAAE+CAMAAACk8jItAAAAb1BMVEUAAAD///8nJyeXl5dVVVWurq5JSUnV1dWBgYH8/Pzz8/NsbGzIyMhBQUFUVFT29vaKioo1NTVxcXHo6OjOzs7d3d2ysrLAwMAiIiKioqJnZ2cVFRXf3996enpOTk43NzdeXl5EREQmJiYSEhKnp6eLhoQIAAACRElEQVR4nO3bWXLiMBRGYYsxcgBDTJgMCRn2v8buJA+pysO1CPrRre7zbcAHKMuSkKsKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP57q/0wxeF5virSNwoXqo/rzfL+ZrEX932J9WzYOe77NH3w3RdCe/bdF8LYeV9YO+8Lj877tIEZ+sLWeV84Oe8LA+d9ul84T1+YO+/bqPoWefqCarKQ6fsLS1HfPFPfVNRXzZssfVE2xLxk6Qu6ueDavO56ON5u27q3TzfRWqZcd2R/CuU86z7te3mw+46yvnNaXzWzA2V9u5jWdyjUN0jsG9h9r6X7qtbskw2AyX32LVy+b+y8b++8zx7Iy/fd0UcfffSJ+ryPf96fHxvnfd7nL/b8T5WX3Lcy82LxPnv9oVu/pfbZ6zfZBkxqX8/6d1aob1N1Xff2fJjaebINtr6+WH/oiQvK/SG7L5Fufy1PXyPLy9Mn2yDP1Dfy3Vfr8rL07X33xZ3vPuHdkaOvefPdp3u2ZenTTV2y9DXKm+P6vigcmjP0xbM477q+o/4k2xV9jfbOvbKvvUXdL/ti+764Sd3lfc1xtj/c8LRn7/pt8DSZTBZ3f50mT9JH2e/6CvPeZ/+/qlt3p7KP6Igf/gns//eVK4s0J+d9W7MvlDnX/m1n52nXFgn6NqaUpzf7pZwPey/Yl3K+ruQQQx999NFHH3300fdTyvsLJfvsw8VftG+Q2bqPvYsespdjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBf8wfJViQUKAq+gAAAAABJRU5ErkJggg==" alt="Alfabat 2">
+    </div>
+</div>
+</div>
+<div id="result">  </div>
+<script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
